@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
+import Detail from "./routes/Detail";
 import Navigation from "./components/Navigation";
 
 // npm install react-router-dom
@@ -15,6 +16,7 @@ function App() {
       (없으면 /about 에 가면 Home이랑 About이 둘 다 렌더링 됨) */}
       <Route path="/" exact={true} component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/movie-detail" component={Detail} />
     </BrowserRouter>
   );
 }
