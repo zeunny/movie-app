@@ -16,7 +16,8 @@ function App() {
       (없으면 /about 에 가면 Home이랑 About이 둘 다 렌더링 됨) */}
       <Route path="/" exact={true} component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/movie-detail" component={Detail} />
+      <Route path="/movie/:id" component={Detail} />
+      {/* Route는 props를 가지고 있고 그것을 통해 component에 정보를 줄 수 있다 */}
     </BrowserRouter>
   );
 }
